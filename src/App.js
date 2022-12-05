@@ -6,7 +6,7 @@ import OurProjects from "./components/02_body/components/04-ourProjects/OurProje
 
 function App() {
   return (
-    <div className="relative w-full h-full App bg-slate-200">
+    <div className="relative flex flex-col items-center justify-center w-full h-full App bg-slate-200">
       <Header />
       <Intro />
       <WhyUs />
