@@ -26,8 +26,8 @@ export default function OurProjects() {
       </div>
 
       <div className="flex flex-col items-center justify-center w-3/4 gap-3">
-        <div className="text-sm font-bold text-neutral-700">Our Partners</div>
-        <div className="flex items-center w-2/3 gap-2 py-3 rounded-lg shadow justify-evenly bg-gray-50">
+        <div className="text-lg font-light text-neutral-700">Our Partners</div>
+        <div className="flex items-center w-2/3 gap-2 py-3 rounded-lg justify-evenly">
           <Partner logo={logo1} />
           <Partner logo={logo2} />
           <Partner logo={logo3} id={'#toBlack'} />

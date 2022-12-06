@@ -45,7 +45,7 @@ export default function OurServices() {
   ];
   
   return (
-    <div className="flex items-center justify-center w-full bg-slate-50 h-100v">
+    <div className="flex items-center justify-center w-full bg-neutral-50 h-100v">
       <div className="flex items-center justify-center w-3/4 gap-3">
         <OurServicesCard
           icon={cardContent[0].icon}
