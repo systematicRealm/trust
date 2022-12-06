@@ -1,0 +1,3 @@
+#toBlack {
+  filter: invert(0%) sepia(0%) saturate(22%) hue-rotate(49deg) brightness(89%) contrast(105%);
+}
