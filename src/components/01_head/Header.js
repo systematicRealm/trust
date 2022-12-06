@@ -4,7 +4,6 @@ import logo from "./assets/logo.svg";
 export default function Header() {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
   const header = useRef(null);
-  const logoContainer = useRef(null);
   useEffect(() => {
     // create a function to handle the scroll event
     const handleScroll = () => {
@@ -35,7 +34,6 @@ export default function Header() {
       <div className="flex items-center justify-between w-3/4">
         <div
           onClick={scrollToTop}
-          ref={logoContainer}
           className="flex items-center justify-center w-10 transition-colors duration-300 bg-neutral-200 hover:bg-neutral-200 rounded-full cursor-pointer"
         >
           <img className="w-full" src={logo} alt="trust logo" />
