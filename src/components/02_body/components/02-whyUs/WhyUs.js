@@ -18,8 +18,8 @@ export default function WhyUs() {
     "Safety Management",
   ];
   return (
-    <div className="flex items-center justify-center w-full bg-neutral-600 h-100v">
-      <div className="flex items-center justify-center w-3/4 gap-2">
+    <div className="flex items-center justify-center w-full py-3" id="WhyUs">
+      <div className="flex items-center justify-center w-4/6 gap-2">
         <CardWhyUs icon={delivery} text={points[0]} />
         <CardWhyUs icon={assure} text={points[1]} />
         <CardWhyUs icon={volunteer} text={points[2]} />

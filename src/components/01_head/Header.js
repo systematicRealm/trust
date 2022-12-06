@@ -10,10 +10,21 @@ export default function Header() {
         </div>
 
         <div className="flex items-center justify-center gap-5 font-normal">
-          <span>Why us</span>
-          <span>Our Services</span>
-          <span>Our projects</span>
-          <span>Contact us</span>
+          <span>
+            <a href="#OurServices">Our Services</a>
+          </span>
+
+          <span>
+            <a href="#OurProjects">Our projects</a>
+          </span>
+
+          <span>
+            <a href="#WhyUs">Why us</a>
+          </span>
+
+          <span>
+            <a href="#ContactUs">Contact us</a>
+          </span>
         </div>
       </div>
     </div>

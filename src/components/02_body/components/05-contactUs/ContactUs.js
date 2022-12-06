@@ -3,11 +3,11 @@ import Line from "./components/Line";
 import call from "./assests/call.svg";
 import mail from "./assests/mail.svg";
 import location from "./assests/location.svg";
-import './ContactUs.css'
+import "./ContactUs.css";
 
 export default function ContactUs() {
   return (
-    <div className="flex items-center justify-center w-full h-100v">
+    <div className="flex items-center justify-center w-full py-3">
       <div id="ContactUs" className="w-3/4">
         <div className="flex flex-row items-center justify-center w-full py-8">
           <Line icon={call} title={"Talk to us"} line={"+966-11222-8559"} />

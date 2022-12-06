@@ -1,5 +1,5 @@
 import React from "react";
-import '../OurProjects.css'
+import '../OurPartners.css'
 
 export default function Partner({ logo, id }) {
   return (

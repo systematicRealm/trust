@@ -19,6 +19,7 @@ module.exports = {
       colors: {
         "theme-yellow": "#fca518",
         "theme-red": "#BC4141",
+        "transparent-black": "rgba(0, 0, 0, 0.3)",
       },
     },
   },
