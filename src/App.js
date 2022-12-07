@@ -9,7 +9,7 @@ import CopyRight from "./components/02_body/components/07-copyRight/CopyRight";
 
 function App() {
   return (
-    <div className="relative flex flex-col items-center justify-center w-full h-full gap-24 cursor-pointer select-none App bg-neutral-50">
+    <div className="relative flex flex-col items-center justify-center w-full h-full gap-24 App bg-neutral-50">
       <Header />
       <Intro />
       <OurServices />
