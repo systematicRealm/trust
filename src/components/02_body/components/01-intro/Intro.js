@@ -10,7 +10,7 @@ export default function Intro() {
         className="relative flex items-center justify-center w-full h-full"
         id="intro-wrapper"
       >
-        <div className="z-10 flex items-center justify-center w-5/6 gap-6 mt-12 h-fit">
+        <div className="z-10 flex items-center justify-center w-5/6 gap-6 mt-12 h-fit max-sm:gap-7 max-sm:flex-col max-sm:mt-0">
           <Title />
           <IntroBox />
         </div>

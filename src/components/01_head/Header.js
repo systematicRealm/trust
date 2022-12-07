@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import logo from "./assets/logo.svg";
-import './Header.css'
+import "./Header.css";
 
 export default function Header() {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
@@ -32,24 +32,24 @@ export default function Header() {
       ref={header}
       className="absolute top-0 z-40 flex items-center justify-center w-full py-2 text-white transition-all duration-500"
     >
-      <div className="flex items-center justify-between w-3/4">
+      <div className="flex items-center justify-between w-3/4 max-sm:w-full max-sm:justify-around">
         <div
           onClick={scrollToTop}
           className="flex items-center justify-center w-10 transition-colors duration-300 rounded-full cursor-pointer"
         >
-          <img className="w-full" src={logo} alt="trust logo" id="logo" />
+          <img className="w-full max-sm:w-9" src={logo} alt="trust logo" id="logo" />
         </div>
 
-        <div className="flex items-center justify-center gap-5 font-normal">
+        <div className="flex items-center justify-center gap-5 font-normal max-sm:gap-2">
           {[
-            { name: "Our Services", href: "#OurServices" },
-            { name: "Our projects", href: "#OurProjects" },
+            { name: "Services", href: "#OurServices" },
+            { name: "Projects", href: "#OurProjects" },
             { name: "Why us", href: "#WhyUs" },
-            { name: "Contact us", href: "#ContactUs" },
+            { name: "Get in touch", href: "#ContactUs" },
           ].map((item, index) => (
             <span key={index}>
               <a
-                className="px-2 py-2 transition-colors duration-300 cursor-pointer hover:bg-neutral-200 rounded-3xl hover:text-black"
+                className="px-2 py-2 transition-colors duration-300 cursor-pointer hover:bg-neutral-200 rounded-3xl hover:text-black max-sm:text-sm"
                 href={item.href}
               >
                 {item.name}
