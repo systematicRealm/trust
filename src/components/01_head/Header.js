@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import logo from "./assets/logo.svg";
+import './Header.css'
 
 export default function Header() {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
@@ -8,7 +9,7 @@ export default function Header() {
     // create a function to handle the scroll event
     const handleScroll = () => {
       console.log(window.scrollY);
-      if (window.scrollY > 120) {
+      if (window.scrollY > 220) {
         // if the scroll is greater than 120px
         header.current.classList.add("bg-neutral-900"); // add the class to the header
         header.current.classList.remove("absolute"); // remove the class from the header to make it fixed (like floating on top of the page)
@@ -29,14 +30,14 @@ export default function Header() {
   return (
     <div
       ref={header}
-      className="absolute top-0 flex items-center justify-center w-full py-2 text-white transition-all z-40 duration-500"
+      className="absolute top-0 z-40 flex items-center justify-center w-full py-2 text-white transition-all duration-500"
     >
       <div className="flex items-center justify-between w-3/4">
         <div
           onClick={scrollToTop}
-          className="flex items-center justify-center w-10 transition-colors duration-300 bg-neutral-200 hover:bg-neutral-200 rounded-full cursor-pointer"
+          className="flex items-center justify-center w-10 transition-colors duration-300 rounded-full cursor-pointer"
         >
-          <img className="w-full" src={logo} alt="trust logo" />
+          <img className="w-full" src={logo} alt="trust logo" id="logo" />
         </div>
 
         <div className="flex items-center justify-center gap-5 font-normal">
@@ -48,7 +49,7 @@ export default function Header() {
           ].map((item, index) => (
             <span key={index}>
               <a
-                className="transition-colors duration-300 hover:bg-neutral-200 px-2 rounded-3xl cursor-pointer py-2 hover:text-black"
+                className="px-2 py-2 transition-colors duration-300 cursor-pointer hover:bg-neutral-200 rounded-3xl hover:text-black"
                 href={item.href}
               >
                 {item.name}
